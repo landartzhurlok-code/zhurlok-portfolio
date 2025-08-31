@@ -1,180 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Zhurunova & Lokatyr — Land Art</title>
-  <meta name="description" content="Land art and environmental art — Marharyta Zhurunova & Bohdan Lokatyr. Portfolio and CV." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg: #fbfaf8; /* warm very light */
-      --card: #ffffff;
-      --muted:#747474;
-      --text:#111111;
-      --accent:#000000;
-      --max-w:1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-      background:var(--bg);
-      color:var(--text);
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
-    }
-    .container{max-width:var(--max-w);margin:0 auto;padding:40px 24px}
-
-    /* Header */
-    header.site-header{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:28px 0}
-    .brand{display:flex;align-items:baseline;gap:12px}
-    .brand .title{font-weight:600;letter-spacing:0.6px;font-size:20px}
-    .brand .tag{font-weight:300;color:var(--muted);font-size:14px}
-
-    nav.main-nav{margin-top:8px}
-    nav.main-nav a{margin-right:18px;text-decoration:none;color:var(--muted);font-weight:500}
-    nav.main-nav a:hover{color:var(--accent)}
-
-    /* Hero */
-    .hero{display:flex;gap:32px;align-items:center;padding:36px 0;border-top:1px solid rgba(0,0,0,0.04);border-bottom:1px solid rgba(0,0,0,0.04);background:transparent}
-    .hero .intro{flex:1}
-    .hero h1{margin:0;font-size:34px;font-weight:600;letter-spacing:0.4px}
-    .hero p.lead{margin:12px 0 0;color:var(--muted);max-width:60ch}
-
-    /* Card sections */
-    .card{background:var(--card);padding:28px;border-radius:6px;box-shadow:0 6px 18px rgba(20,20,20,0.04);margin-top:28px}
-    h2.section-title{margin:0 0 10px 0;font-weight:600;font-size:18px}
-    p.small{color:var(--muted);margin:0}
-
-    /* Two-column layout */
-    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
-    @media (max-width:880px){.grid{grid-template-columns:1fr}}
-
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:4px;background:#eaeaea}
-    @media (max-width:880px){.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:160px}}
-    @media (max-width:520px){.gallery{grid-template-columns:1fr}.gallery img{height:220px}}
-
-    /* Education list */
-    dl.education{margin:0;padding:0}
-    dl.education dt{font-weight:600;margin-top:12px}
-    dl.education dd{margin:4px 0 0 0;color:var(--muted)}
-
-    /* Footer */
-    footer.site-footer{margin-top:40px;padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
-
-    /* small utilities */
-    .muted{color:var(--muted)}
-    a{text-decoration:none;color:inherit}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marharyta Zhurunova & Bohdan Lokatyr - Land Art Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="brand">
-        <div class="title">ZHURUNOVA & LOKATYR</div>
-        <div class="tag muted">Land art · Environmental art · Site-specific</div>
-      </div>
-
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero" id="about">
-      <div class="intro">
-       
-        <p class="lead">The creative association has existed since 2015, starting from the first joint project at the winter land art festival Mythogenesis (Vinnytsia, Ukraine). Both participants — Marharyta Zhurunova (Vinnytsia, 29.11.1994) and Bohdan Lokatyr (Lviv, 04.05.1993) — studied together at the Ukrainian Academy of Printing and became partners and co-authors.</p>
-      </div>
-      <div style="width:320px">
-        <div class="card">
-          <h2 class="section-title">Main practices</h2>
-          <p class="small">Land art, environmental art, site-specific art. Themes include the mutual influence of people and landscape, toxic transformations, and since 2022 — war-related works.</p>
-          <div style="height:12px"></div>
-          <h2 class="section-title">Honours</h2>
-          <p class="small">2019 — laureates of the President of Ukraine scholarships for young writers and artists; recipients of a presidential grant.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Zhurunova & Lokatyr</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Land Art</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#exhibitions" class="nav-link">Exhibitions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Land Art Duo <span class="highlight">Zhurunova & Lokatyr</span></h1>
+                <p class="hero-subtitle">Environmental & Site-Specific Artists</p>
+                <p class="hero-description">
+                    We create land art, environmental and site-specific installations exploring 
+                    the mutual influence between humans and landscapes, with a focus on their 
+                    toxic manifestations and contemporary social themes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Our Work</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic">
+                    <img src="https://via.placeholder.com/300x300/4f46e5/ffffff?text=M%26B" alt="Marharyta & Bohdan">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div class="grid">
-      <main>
-        <article class="card" id="works">
-          <h2 class="section-title">Selected works</h2>
-          <p class="muted">Click any image to open full size (replace placeholders with your photos)</p>
-          <div class="gallery">
-            <img src="/images/work1.jpg" alt="Work 1">
-            <img src="/images/work2.jpg" alt="Work 2">
-            <img src="/images/work3.jpg" alt="Work 3">
-            <img src="/images/work4.jpg" alt="Work 4">
-            <img src="/images/work5.jpg" alt="Work 5">
-            <img src="/images/work6.jpg" alt="Work 6">
-          </div>
-        </article>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        The creative association has existed since 2015, from the first joint project 
+                        created at the winter festival of land art Mithogenesis (Vinnytsia, Ukraine). 
+                        Both participants - <strong>Marharyta Zhurunova</strong> from Vinnytsia (29.11.1994) 
+                        and <strong>Bohdan Lokatyr</strong> from Lviv (04.05.1993) studied together at the 
+                        Ukrainian Academy of Printing and became partners and co-authors.
+                    </p>
+                    <p>
+                        The main activities of the duo are land, environmental and site specific art. 
+                        The preferred theme is the mutual influence of the person and the landscape, 
+                        toxic manifestations of it. Of course, after February 24, 2022, most of the 
+                        works created are on the theme of war.
+                    </p>
+                    
+                    <div class="achievements">
+                        <h3>Recognition & Awards</h3>
+                        <ul>
+                            <li>🏆 <strong>2019</strong> - Laureates of the President of Ukraine scholarships for young writers and artists</li>
+                            <li>🎯 <strong>Finalists:</strong> Natan Altman Contemporary Art Competition (2018)</li>
+                            <li>🎯 <strong>Finalists:</strong> Second Biennale of Young Art (Kharkiv, 2019)</li>
+                            <li>🎯 <strong>Finalists:</strong> M17 Sculpture Prize: Roots and Pollen (2020)</li>
+                        </ul>
+                    </div>
 
-        <article class="card" id="projects">
-          <h2 class="section-title">Projects</h2>
-          <p class="small">Recent projects include site-specific installations in quarries, riverbeds and village landscapes. Many works are connected to the Mogrytsia quarry in Sumy region; themes explore how fertile land is shaped by human labour and memory.</p>
-        </article>
-
-        <article class="card" id="contact">
-          <h2 class="section-title">Contact</h2>
-          <p class="small">Email: <a href="mailto:landart.zhur.lok@gmail.com">landart.zhur.lok@gmail.com</a></p>
-          <p class="small">Instagram: <a href="https://instagram.com/land_art_zhurunova.lokatyr" target="_blank" rel="noopener">@land_art_zhurunova.lokatyr</a></p>
-        </article>
-      </main>
-
-      <aside>
-        <div class="card" id="education">
-          <h2 class="section-title">Education</h2>
-
-          <h3 style="margin:0;margin-top:8px;">Bohdan Lokatyr</h3>
-          <dl class="education">
-            <dt>Lviv State College of Decorative and Applied Arts named after Ivan Trush</dt>
-            <dd>Artistic Ceramics (Junior Specialist, 2012)</dd>
-            <dt>Ukrainian Academy of Printing</dt>
-            <dd>Department of Book and Easel Graphics (Master’s degree, 2018; PhD in progress)</dd>
-          </dl>
-
-          <div style="height:16px"></div>
-
-          <h3 style="margin:0;margin-top:8px;">Marharyta Zhurunova</h3>
-          <dl class="education">
-            <dt>Ukrainian Academy of Printing</dt>
-            <dd>Department of Book and Easel Graphics (Master’s degree, 2018)</dd>
-            <dt>Salzburg International Summer Academy of Fine Arts</dt>
-            <dd>Salzburg, Austria (2023)</dd>
-            <dt>Climate Adaption for Creatives</dt>
-            <dd>Black Mountains College & The British Council (2024–25)</dd>
-          </dl>
-
+                    <div class="education">
+                        <h3>Education</h3>
+                        <div class="education-grid">
+                            <div class="education-item">
+                                <h4>Bohdan Lokatyr</h4>
+                                <p>• Lviv State College of Decorative and Applied Arts named after Ivan Trush - Artistic ceramics (2012)</p>
+                                <p>• Ukrainian Academy of Printing - Book and Easel Graphics (Master's 2018, PhD in process)</p>
+                            </div>
+                            <div class="education-item">
+                                <h4>Marharyta Zhurunova</h4>
+                                <p>• Ukrainian Academy of Printing - Book and Easel Graphics (Master's 2018)</p>
+                                <p>• Salzburg International Summer Academy of Fine Arts (2023, Austria)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </aside>
-    </div>
+    </section>
 
-    <footer class="site-footer">
-      © 2025 Zhurunova & Lokatyr — landart-zhurunova-lokatyr
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Land Art Works</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/6366f1/ffffff?text=Anxiety+State" alt="Anxiety State">
+                    </div>
+                    <div class="project-content">
+                        <h3>Anxiety State</h3>
+                        <p>We all share a feeling of anxiety. Nothing is certain, the sense of security is lost. Safe places have disappeared, anything can be perceived as a danger.</p>
+                        <div class="project-tags">
+                            <span class="tag">Land Art</span>
+                            <span class="tag">Installation</span>
+                            <span class="tag">2022-2023</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>Assortymentna kimnata residence, Creative Europe program</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/8b5cf6/ffffff?text=OCULUS" alt="OCULUS">
+                    </div>
+                    <div class="project-content">
+                        <h3>OCULUS</h3>
+                        <p>A pond entirely covered with duckweed is a mysterious dark temple to which we have carved a window - from us to them, from them to us.</p>
+                        <div class="project-tags">
+                            <span class="tag">Land Art</span>
+                            <span class="tag">Lithuania</span>
+                            <span class="tag">2019</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>Botanical Garden of Vilnius University</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/06b6d4/ffffff?text=SPHERE" alt="SPHERE">
+                    </div>
+                    <div class="project-content">
+                        <h3>SPHERE</h3>
+                        <p>We decided to enclose the perfect material (legendary chalk) in the perfect shape - a sphere. Interestingly, chalk particles under the microscope are also round.</p>
+                        <div class="project-tags">
+                            <span class="tag">Land Art</span>
+                            <span class="tag">Mogritsa</span>
+                            <span class="tag">2021</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>Land Art Symposium "Borderline Space"</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f59e0b/ffffff?text=Return" alt="Return">
+                    </div>
+                    <div class="project-content">
+                        <h3>Return (Повернення)</h3>
+                        <p>Parasitic mushrooms appear in the most unexpected places - marking emptiness and ruin, reminding us that such a state of things is not normal.</p>
+                        <div class="project-tags">
+                            <span class="tag">Installation</span>
+                            <span class="tag">Urban Art</span>
+                            <span class="tag">2017-2020</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>Second Biennale of Young Art, Kharkiv</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/ef4444/ffffff?text=Remains" alt="Remains">
+                    </div>
+                    <div class="project-content">
+                        <h3>Remains (Рештки)</h3>
+                        <p>Images of war that cannot be forgotten. A vengeful specter of violence that haunts peaceful landscapes, seen in every unusual bend of root or branch.</p>
+                        <div class="project-tags">
+                            <span class="tag">War Theme</span>
+                            <span class="tag">Installation</span>
+                            <span class="tag">2023</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>Assortment Room, Ivano-Frankivsk</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/10b981/ffffff?text=Zahoplennya" alt="Zahoplennya">
+                    </div>
+                    <div class="project-content">
+                        <h3>Zahoplennya (Захоплення)</h3>
+                        <p>Both admiration and appropriation. A temporary gallery to snatch from the green sea a small plant, show how beautiful it is, and release back into the sea.</p>
+                        <div class="project-tags">
+                            <span class="tag">Land Art</span>
+                            <span class="tag">Mogritsa</span>
+                            <span class="tag">2020</span>
+                        </div>
+                        <div class="project-details">
+                            <p><small>P.S. no plant was affected</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section id="exhibitions" class="exhibitions">
+        <div class="container">
+            <h2 class="section-title">Recent Exhibitions & Residencies</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Recent Projects</h3>
+                        <ul>
+                            <li>Formula of Resilience - Center of Contemporary Art M17, Kyiv</li>
+                            <li>Stedley Art Foundation, Kyiv</li>
+                            <li>Slow River House residency, Kharkiv region</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>International Recognition</h3>
+                        <ul>
+                            <li>ArtsIceland residency (Culture Moves Europe), Ísafjörður, Iceland</li>
+                            <li>Inner Landscapes - ERSTE Foundation, Vienna, Austria</li>
+                            <li>Day after Day - atelier19, Paderborn, Germany</li>
+                            <li>HOME residency program, Graz, Austria</li>
+                            <li>Kyiv Biennial, Uzhhorod, Ukraine</li>
+                            <li>ICA residency (Artists at Risk program), Italy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>War Period Works</h3>
+                        <ul>
+                            <li>Time of war. Reflections - Dzyga Gallery, Lviv</li>
+                            <li>"Invasion. Before and after" - Wroclaw, Poland</li>
+                            <li>The Art of Resistance - University of Valencia, Spain</li>
+                            <li>pARTner residency - Villa Müller, Feldkirch, Austria</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2019-2021</div>
+                    <div class="timeline-content">
+                        <h3>Major Achievements</h3>
+                        <ul>
+                            <li>Second Biennale of Young Art, Kharkiv (2019)</li>
+                            <li>M17 Sculpture Prize: Roots and Pollen finalist (2020)</li>
+                            <li>President of Ukraine scholarships recipients (2019)</li>
+                            <li>Land Art Festival "Nature and Art", Vilnius, Lithuania</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>We are always interested in new collaborations, exhibitions, and land art projects.</p>
+                <div class="artist-contacts">
+                    <div class="artist-info">
+                        <h3>Marharyta Zhurunova</h3>
+                        <p>Vinnytsia, Ukraine (29.11.1994)</p>
+                    </div>
+                    <div class="artist-info">
+                        <h3>Bohdan Lokatyr</h3>
+                        <p>Lviv, Ukraine (04.05.1993)</p>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:contact@zhurlok.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        contact@zhurlok.com
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <a href="#" class="contact-link">
+                        <i class="fas fa-globe"></i>
+                        Portfolio Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Marharyta Zhurunova & Bohdan Lokatyr. All rights reserved.</p>
+            <p>Land Art • Environmental Art • Site-Specific Installations</p>
+        </div>
     </footer>
-  </div>
 
-  <script>
-    // smooth anchor scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', function(e){
-        var target = document.querySelector(this.getAttribute('href'));
-        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
-      });
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
