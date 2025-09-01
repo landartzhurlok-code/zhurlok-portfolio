@@ -56,3 +56,12 @@ h1,h2{font-weight:600;}
   font-weight:300;  /* тонший */
   color:#555;
 }
+/* Default desktop */ .site-header .header-inner {   display: flex;   justify-content: space-between;   align-items: center; }
+ 
+/* Mobile layout */ @media (max-width: 600px) {   .site-header .header-inner {     display: grid;     grid-template-columns: auto 1fr; /* brand left | menu right */     grid-template-rows: auto auto;   /* two rows for menu */     align-items: start;              /* align everything at the top */   }
+ 
+  .site-header .brand {     grid-row: 1;     /* only top row */     grid-column: 1;  /* left cell */     align-self: start;   }
+ 
+  .site-header .main-nav {     display: grid;     grid-template-columns: 1fr 1fr; /* 2 links per row */     grid-template-rows: auto auto;     gap: 10px;     grid-column: 2; /* right side */     grid-row: 1 / span 2; /* span both rows */   }
+ 
+  .site-header .main-nav a {     display: block;     text-align: center;     padding: 6px;   } } ✅ On desktop: Brand left, inline links on the right. ✅ On mobile: Brand sticks top-left, menu fills the right side in a 2×2 grid.
