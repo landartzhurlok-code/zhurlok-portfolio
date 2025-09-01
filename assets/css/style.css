@@ -24,7 +24,7 @@ h1,h2{font-weight:600;}
 .site-header {
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:space-between; /* розділяє ліво/право */
   padding:20px 0;
 }
 
@@ -35,8 +35,14 @@ h1,h2{font-weight:600;}
 }
 
 .logo {
-  height:50px; /* змінюй висоту під свій логотип */
+  height:50px;
   width:auto;
+}
+
+.brand-text {
+  display:flex;
+  flex-direction:column;
+  line-height:1.2;
 }
 
 .brand-text .title {
@@ -46,8 +52,7 @@ h1,h2{font-weight:600;}
 }
 
 .brand-text .tag {
-  font-size:14px;
+  font-size:28px;   /* такий же розмір */
+  font-weight:300;  /* тонший */
   color:#555;
-  margin-top:4px;
-  font-style:italic;
 }
