@@ -56,6 +56,47 @@ h1,h2{font-weight:600;}
   font-weight:300;  /* тонший */
   color:#555;
 }
+
+/* === HEADER FIX 2 === */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* brand зліва, меню справа */
+  padding: 20px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center; /* логотип і тексти тепер вирівняні по центру */
+  gap: 14px;
+}
+
+.logo {
+  height: 60px; /* трохи більший, щоб гармоніював з текстом */
+  width: auto;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* центрирує текст по висоті відносно лого */
+  align-items: flex-start;   /* тексти вирівняні по лівому краю */
+  line-height: 1.25;
+}
+
+.brand-text .title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.brand-text .tag {
+  font-size: 28px;   /* майже такий самий, але трохи менший для гармонії */
+  font-weight: 300;  /* тонший */
+  color: #555;
+}
+
+
 /* Default desktop */ .site-header .header-inner {   display: flex;   justify-content: space-between;   align-items: center; }
  
 /* Mobile layout */ @media (max-width: 600px) {   .site-header .header-inner {     display: grid;     grid-template-columns: auto 1fr; /* brand left | menu right */     grid-template-rows: auto auto;   /* two rows for menu */     align-items: start;              /* align everything at the top */   }
