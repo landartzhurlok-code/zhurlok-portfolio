@@ -24,7 +24,7 @@ h1,h2{font-weight:600;}
 .site-header {
   display:flex;
   align-items:center;
-  justify-content:space-between; /* розділяє ліво/право */
+  justify-content:left; /* розділяє ліво/право */
   padding:20px 0;
 }
 
@@ -35,7 +35,7 @@ h1,h2{font-weight:600;}
 }
 
 .logo {
-  height:50px;
+  height:55px;
   width:auto;
 }
 
@@ -46,52 +46,15 @@ h1,h2{font-weight:600;}
 }
 
 .brand-text .title {
-  font-size:24px;
-  font-weight:600;
+  font-size:17px;
+  font-weight:500;
   letter-spacing:0.8px;
 }
 
 .brand-text .tag {
-  font-size:14px;   /* такий же розмір */
+  font-size:11px;   /* такий же розмір */
   font-weight:300;  /* тонший */
   color:#555;
 }
 
-/* === HEADER FIX 2 === */
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* brand зліва, меню справа */
-  padding: 20px 0;
-}
 
-.brand {
-  display: flex;
-  align-items: center; /* логотип і тексти тепер вирівняні по центру */
-  gap: 14px;
-}
-
-.logo {
-  height: 60px; /* трохи більший, щоб гармоніював з текстом */
-  width: auto;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* центрирує текст по висоті відносно лого */
-  align-items: flex-start;   /* тексти вирівняні по лівому краю */
-  line-height: 1.25;
-}
-
-.brand-text .title {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-}
-
-.brand-text .tag {
-  font-size: 28px;   /* майже такий самий, але трохи менший для гармонії */
-  font-weight: 300;  /* тонший */
-  color: #555;
-}
