@@ -1,33 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Home</title>
-<link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Zhurunova & Lokatyr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
-<header>
-  <strong>ZHURUNOVA & LOKATYR</strong><br>
-  Land art · Environmental · Site-specific<br><br>
-  <nav>
-    <a href="/index.html">Home</a>
+<header class="site-header">
+  <div class="header-left">
+    <div class="logo">ZHURUNOVA & LOKATYR</div>
+    <div class="subtitle">Land art · Environmental · Site-specific</div>
+  </div>
+  <nav class="header-nav">
+    <a href="/index.html" class="active">Home</a>
     <a href="/cv.html">CV</a>
     <a href="/projects.html">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<div class="container">
-<h1>Our work</h1>
-<p>
-Our work unfolds at the intersection of environmental, site-specific, and land art.
-We see no boundary between human and environment — each inscribes itself upon the other.
-</p>
-</div>
+<main class="home">
 
-<footer>
-  <p>Contact: landart.zhur.lok@gmail.com · Instagram: @land_art_zhurunova.lokatyr</p>
-  <p>© 2025 Zhurunova & Lokatyr</p>
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro-text">
+      <div class="intro-line"></div>
+      <p>
+        Our work unfolds at the intersection of environmental, site-specific,
+        and land art. We see no boundary between human and environment –
+        each inscribes itself upon the other in a fragile, shifting balance.
+      </p>
+      <p>
+        At the heart of our practice is the desire to play: to play with the
+        landscape, to give and receive, to create moments that make viewers
+        pause in disbelief.
+      </p>
+      <p>
+        Guided by concept rather than medium, we let each idea determine
+        its own form.
+      </p>
+    </div>
+
+    <div class="intro-image">
+      <img src="/assets/images/home/portrait.jpg" alt="Zhurunova & Lokatyr">
+    </div>
+  </section>
+
+  <!-- SELECTED WORKS -->
+  <section class="selected">
+    <h2>Selected works</h2>
+
+    <div class="selected-layout">
+      <div class="selected-grid">
+        <a href="/projects/project1.html"><img src="/assets/images/projects/project1_cover.jpg"><span>NAME</span></a>
+        <a href="/projects/project2.html"><img src="/assets/images/projects/project2_cover.jpg"></a>
+        <a href="/projects/project3.html"><img src="/assets/images/projects/project3_cover.jpg"></a>
+        <a href="/projects/project4.html"><img src="/assets/images/projects/project4_cover.jpg"></a>
+        <a href="/projects/project5.html"><img src="/assets/images/projects/project5_cover.jpg"></a>
+        <a href="/projects/project6.html"><img src="/assets/images/projects/project6_cover.jpg"></a>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="home-sidebar">
+        <h3>Main practices</h3>
+        <ul>
+          <li>Land art</li>
+          <li>Environmental art</li>
+          <li>Site-specific art</li>
+        </ul>
+
+        <h3>Themes:</h3>
+        <ul>
+          <li>Mutual influence of person and landscape</li>
+          <li>Environmental issues</li>
+          <li>Playing with space</li>
+          <li>The impact of war</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: landart.zhur.lok@gmail.com</p>
+    <p>Instagram: @land_art_zhurunova.lokatyr</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © 2025 Zhurunova & Lokatyr
 </footer>
 
 </body>
