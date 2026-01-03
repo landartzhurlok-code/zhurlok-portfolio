@@ -171,46 +171,57 @@ footer {
 
 @media (max-width: 600px) {
 
-  /* HEADER */
+  /* ================= HEADER ================= */
+
   header {
-    padding: 20px 20px 12px;
+    padding: 16px 16px 8px;
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 8px;
+    background: var(--bg-main);
   }
 
   header img {
-    max-width: 220px;     /* ключове: лого НЕ постер */
-    margin: 0 auto;
+    max-width: 200px;
+    margin: 0;
   }
 
   nav {
-    justify-self: center;
+    justify-self: start;
   }
 
   nav a {
-    margin: 0 12px;
+    margin: 0 16px 0 0;
     font-size: 14px;
   }
 
-  /* INTRO BLOCK */
+  /* ================= MAIN ================= */
+
   main {
-    padding-top: 12px;
+    padding: 12px 16px 32px;
   }
 
+  /* ================= INTRO ================= */
+
+  /* ❌ вбиваємо картку */
   .intro-wrapper {
-    padding: 20px;
-    margin-bottom: 32px;
+    background: transparent;
+    padding: 0;
+    margin: 0 0 24px 0;
   }
 
+  /* ❗ лінія від краю екрану */
   .intro-wrapper::before {
-    top: 16px;
-    bottom: 16px;
+    top: 0;
+    bottom: 0;
+    left: 0;
     width: 2px;
   }
 
+  /* текст відступає ТІЛЬКИ від лінії */
   .intro {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 0;
+    padding-left: 16px;
   }
 
   .intro p {
@@ -219,11 +230,12 @@ footer {
     line-height: 1.6;
   }
 
-  /* GRIDS */
+  /* ================= GRIDS ================= */
+
   .grid {
     grid-template-columns: 1fr;
   }
-
 }
+
 
 
