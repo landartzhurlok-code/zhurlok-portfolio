@@ -373,6 +373,95 @@ h2 {
     max-width: 100%;
   }
 }
+/* ===== HOME DESKTOP POLISH ===== */
+
+/* загальна ширина сторінки */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* INTRO: зібрана двоколонкова логіка */
+.intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+/* портрет — тільки десктоп */
+.intro-image {
+  max-width: 320px;
+}
+
+/* картинка всередині */
+.intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* SELECTED WORKS + SIDEBAR */
+.selected-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 48px;
+  margin-bottom: 80px;
+}
+
+/* сітка проєктів */
+.selected-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* sidebar — легке відділення */
+.home-sidebar {
+  padding-left: 24px;
+  border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+/* ===== MOBILE — НЕ ЧІПАЄМО ЛОГІКУ ===== */
+
+@media (max-width: 900px) {
+
+  .home {
+    padding: 0 24px;
+  }
+
+  .intro {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .intro-image {
+    max-width: 100%;
+    margin-top: 24px;
+  }
+
+  .selected-layout {
+    display: block;
+  }
+
+  .selected-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-sidebar {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .selected-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
