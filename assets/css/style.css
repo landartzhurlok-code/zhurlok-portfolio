@@ -290,5 +290,40 @@ h2 {
 .cv-container {
   max-width: 720px;
 }
+/* ===== CV PAGE FIX ===== */
+
+.cv {
+  width: 100%;
+}
+
+.cv-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* трохи повітря між секціями */
+.cv h1 {
+  margin-bottom: 32px;
+}
+
+.cv h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cv p {
+  margin-bottom: 16px;
+}
+
+.cv ul {
+  margin-left: 16px;
+}
+
+.cv li {
+  margin-bottom: 8px;
+}
+
 
 
