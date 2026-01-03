@@ -462,6 +462,50 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== PROJECT PAGE ===== */
+
+.project-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-meta {
+  font-size: 13px;
+  margin-bottom: 32px;
+  opacity: 0.7;
+}
+
+.project-main-image img {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.project-text {
+  margin-bottom: 48px;
+}
+
+.project-text h2 {
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.project-gallery img {
+  width: 100%;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
