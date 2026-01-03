@@ -40,15 +40,21 @@ body {
 
 header {
   background: #efe7dd;
-  padding: 24px 40px;
+  padding: 24px 0;
+}
+
+header > * {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
 }
 
 header img {
-  width: 100%;
-  max-width: 520px;
+  width: auto;
+  max-width: 280px;
   height: auto;
 }
 
