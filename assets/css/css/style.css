@@ -506,6 +506,84 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== PROJECT PAGE POLISH ===== */
+
+/* загальна колонка сторінки проєкту */
+.project-container {
+  max-width: 900px;          /* ключове */
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* заголовок */
+.project-container h1 {
+  margin-bottom: 8px;
+}
+
+/* meta (year · location) */
+.project-meta {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-bottom: 32px;
+}
+
+/* головне зображення */
+.project-main-image {
+  max-width: 720px;          /* НЕ на весь екран */
+  margin: 0 auto 56px auto;  /* центр + повітря */
+}
+
+.project-main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* текст */
+.project-text {
+  max-width: 720px;
+  margin: 0 auto 64px auto;
+}
+
+.project-text h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* галерея */
+.project-gallery {
+  max-width: 720px;
+  margin: 0 auto 80px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 900px) {
+
+  .project-container {
+    padding: 0 24px;
+  }
+
+  .project-main-image,
+  .project-text,
+  .project-gallery {
+    max-width: 100%;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
