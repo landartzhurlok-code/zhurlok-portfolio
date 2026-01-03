@@ -285,5 +285,10 @@ h2 {
     transform: none;
   }
 }
+/* ===== CV PAGE ===== */
+
+.cv-container {
+  max-width: 720px;
+}
 
 
