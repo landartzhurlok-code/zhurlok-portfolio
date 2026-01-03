@@ -353,6 +353,26 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== INTRO IMAGE DESKTOP FIX ===== */
+
+/* десктоп */
+.intro-image {
+  max-width: 320px;   /* ⬅️ ключове число */
+}
+
+/* картинка всередині */
+.intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* мобільну НЕ ЧІПАЄМО */
+@media (max-width: 900px) {
+  .intro-image {
+    max-width: 100%;
+  }
+}
 
 
 
