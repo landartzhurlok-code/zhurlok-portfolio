@@ -1,247 +1,78 @@
-@font-face { 
-  font-family: 'Gilroy';
-  src: local('Gilroy-Regular');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-Bold');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Gilroy';
-  src: local('Gilroy-Italic');
-  font-weight: 400;
-  font-style: italic;
-}
-
-:root {
-  --bg-main: #f6f1eb;
-  --bg-block: #ffffff;
-  --bg-placeholder: #d8d1c4;
-  --accent: #b50000;
-  --text-main: #2b2b2b;
-}
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Gilroy', Arial, sans-serif;
-  background: var(--bg-main);
-  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  background: #f6f1eb;
+  color: #2b2b2b;
   line-height: 1.5;
 }
 
-/* ================= HEADER ================= */
-
-header {
-  background: #efe7dd;
-  padding: 24px 0;
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
 }
 
-header > * {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 32px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-}
-
-header img {
-  width: auto;
-  max-width: 280px;
-  height: auto;
-}
-
-nav {
-  justify-self: end;
-}
-
-nav a {
-  margin-left: 28px;
+.nav a {
+  margin-left: 20px;
   text-decoration: none;
-  color: #555;
-  font-size: 14px;
+  color: #2b2b2b;
 }
 
-/* ================= MAIN ================= */
-
-main {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 24px 32px 48px;
+/* HOME */
+.intro, .practices {
+  max-width: 800px;
+  padding: 40px;
 }
 
-.section {
-  margin-bottom: 64px;
-}
-
-.section h2 {
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  letter-spacing: 0.06em;
-}
-
-/* ================= INTRO ================= */
-
-.intro-wrapper {
-  position: relative;
-  background: var(--bg-block);
-  padding: 32px;
-  margin-bottom: 48px;
-}
-
-.intro-wrapper::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 24px;
-  bottom: 24px;
-  width: 2px;
-  background: var(--accent);
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  gap: 32px;
-}
-
-.intro p {
-  font-style: italic;
-  max-width: 620px;
-}
-
-/* ================= MEDIA BLOCKS ================= */
-
-.photo,
-.card {
-  background: var(--bg-placeholder);
-}
-
-.photo {
-  aspect-ratio: 3 / 4;
-}
-
-.card {
-  aspect-ratio: 4 / 3;
-}
-
-/* ================= GRIDS ================= */
-
-.grid {
+/* PROJECTS */
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
+  padding: 40px;
 }
 
-.two-columns {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 40px;
+.project-card img {
+  width: 100%;
+  display: block;
 }
 
-.sidebar {
-  background: var(--bg-block);
-  padding: 28px;
+/* PROJECT PAGE */
+.project {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+.project-images img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px;
   font-size: 14px;
 }
 
-/* ================= FOOTER ================= */
+/* MOBILE */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-footer {
-  background: #ddd4c6;
-  padding: 36px 40px;
-  font-size: 13px;
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 900px) {
-  .intro,
-  .two-columns {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-
-  /* ================= HEADER ================= */
-
-  header {
-    padding: 16px 16px 8px;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    background: var(--bg-main);
-  }
-
-  header img {
-    max-width: 200px;
-    margin: 0;
-  }
-
-  nav {
-    justify-self: start;
-  }
-
-  nav a {
-    margin: 0 16px 0 0;
-    font-size: 14px;
-  }
-
-  /* ================= MAIN ================= */
-
-  main {
-    padding: 12px 16px 32px;
-  }
-
-  /* ================= INTRO ================= */
-
-  /* ❌ вбиваємо картку */
-  .intro-wrapper {
-    background: transparent;
-    padding: 0;
-    margin: 0 0 24px 0;
-  }
-
-  /* ❗ лінія від краю екрану */
-  .intro-wrapper::before {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 2px;
-  }
-
-  /* текст відступає ТІЛЬКИ від лінії */
-  .intro {
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding-left: 16px;
-  }
-
-  .intro p {
-    max-width: none;
+  body {
     font-size: 15px;
-    line-height: 1.6;
-  }
-
-  /* ================= GRIDS ================= */
-
-  .grid {
-    grid-template-columns: 1fr;
   }
 }
-
-
-
