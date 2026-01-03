@@ -225,4 +225,65 @@ h2 {
     gap: 16px;
   }
 }
+/* ===== SELECTED WORKS HOVER ===== */
+
+.work-item {
+  position: relative;
+  display: block;
+}
+
+.work-image {
+  position: relative;
+  overflow: hidden;
+  background: #d8d1c4;
+}
+
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* overlay */
+.work-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.work-title {
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* HOVER */
+.work-item:hover img {
+  transform: scale(1.03);
+}
+
+.work-item:hover .work-image::after {
+  opacity: 1;
+}
+
+.work-item:hover .work-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* touch devices — без зависань */
+@media (hover: none) {
+  .work-image::after,
+  .work-title {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
