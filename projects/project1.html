@@ -1,42 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Project 1</title>
-<link rel="stylesheet" href="assets/css/css/style.css">
+  <meta charset="UTF-8">
+  <title>Project title – Zhurunova & Lokatyr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<header>
-  <strong>ZHURUNOVA & LOKATYR</strong><br>
-  Land art · Environmental · Site-specific<br><br>
-  <nav>
-    <a href="/index.html">Home</a>
-    <a href="/cv.html">CV</a>
-    <a href="/projects.html">Projects</a>
+<header class="site-header">
+  <div class="header-left">
+    <div class="logo">ZHURUNOVA & LOKATYR</div>
+    <div class="subtitle">Land art · Environmental · Site-specific</div>
+  </div>
+  <nav class="header-nav">
+    <a href="../index.html">Home</a>
+    <a href="../cv.html">CV</a>
+    <a href="../projects.html" class="active">Projects</a>
   </nav>
 </header>
 
-<div class="container">
-<h1>Project 1 title</h1>
-<p>Short information · year · location</p>
+<main class="home">
 
-<div class="project-images">
-  <img src="/assets/images/projects/project1_main.jpg" alt="Main image">
-  <div>
-    <img src="/assets/images/projects/project1_1.jpg">
-    <img src="/assets/images/projects/project1_2.jpg">
-    <img src="/assets/images/projects/project1_3.jpg">
-  </div>
-</div>
+  <section class="project-page">
 
-<h2>Concept</h2>
-<p>Project description text goes here.</p>
-</div>
+    <div class="project-container">
 
-<footer>
-  <p>Contact: landart.zhur.lok@gmail.com · Instagram: @land_art_zhurunova.lokatyr</p>
-  <p>© 2025 Zhurunova & Lokatyr</p>
+      <h1>Project title</h1>
+      <p class="project-meta">Year · Location</p>
+
+      <div class="project-main-image">
+        <img src="../assets/css/images/home/projects/project1_cover.JPG" alt="Project image">
+      </div>
+
+      <div class="project-text">
+        <h2>Concept</h2>
+        <p>
+          Project description text goes here. You can write several paragraphs.
+        </p>
+      </div>
+
+      <div class="project-gallery">
+        <img src="../assets/css/images/home/projects/project1_1.jpg" alt="">
+        <img src="../assets/css/images/home/projects/project1_2.jpg" alt="">
+        <img src="../assets/css/images/home/projects/project1_3.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © 2025 Zhurunova & Lokatyr
 </footer>
 
 </body>
