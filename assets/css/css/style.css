@@ -583,6 +583,14 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== FORCE PROJECT IMAGE WIDTH FIX ===== */
+
+.project-main-image img {
+  width: auto !important;
+  max-width: 720px;
+  margin: 0 auto;
+  display: block;
+}
 
 
 
