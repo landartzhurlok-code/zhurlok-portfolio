@@ -534,6 +534,54 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ===== HEADER BRAND (AS IN SKETCH) ===== */
+
+.brand {
+  display: flex;
+  align-items: flex-start; /* ⬅️ НЕ по центру */
+  gap: 16px;
+}
+
+.brand-logo-wrap {
+  border: 2px solid #b50000;   /* червона рамка */
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 36px;
+  height: auto;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text .logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.brand-text .subtitle {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  .brand {
+    gap: 12px;
+  }
+
+  .brand-logo {
+    width: 32px;
+  }
+}
 
 
 
