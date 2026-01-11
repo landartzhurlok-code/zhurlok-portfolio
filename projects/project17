@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> CAPTURE – Zhurunova & Lokatyr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-left">
+    <div class="logo">ZHURUNOVA & LOKATYR</div>
+    <div class="subtitle">Land art · Environmental · Site-specific</div>
+  </div>
+  <nav class="header-nav">
+    <a href="../index.html">Home</a>
+    <a href="../cv.html">CV</a>
+    <a href="../projects.html" class="active">Projects</a>
+  </nav>
+</header>
+
+<main class="home">
+
+  <section style="max-width:720px; margin:0 auto;">
+
+    <h1 style="margin-bottom:8px;">
+      CAPTURE
+    </h1>
+
+    <p style="font-size:13px; opacity:0.6; margin-bottom:40px;">
+      2020 · Land Art Symposium “Borderline Space” · Moghrytsia, Symy regiom, Ukraine · Symposium theme: Temporary Message
+
+    </p>
+
+    <!-- MAIN IMAGE -->
+    <img
+      src="../assets/css/images/home/projects/project17_cover.JPG"
+      alt="Project 17 main image"
+      style="display:block; width:100%; margin-bottom:56px;"
+    >
+
+    <!-- TEXT -->
+    <h2 style="font-size:14px; text-transform:uppercase; margin-bottom:16px;">
+      Concept
+    </h2>
+
+    <p style="margin-bottom:56px;">
+We've been thinking about this work from time to time.
+A delicate play, so innocent.
+Turned into something painful, ironically unfunny.
+And yet the memory remains tender
+
+Concept written in 2020:
+
+""""“Capture” is both an action and a title, a play on words.
+We are captivated by the beauty of Mohrytsia’s wild grasses, and we capture that beauty in a trap.
+The trap, a self-moving temporary gallery, to momentarily snatch from the green sea (from the white noise) a small plant, a tiny detail, a trifle, to show (to ourselves, the viewer, the world) how beautiful it is, and then release it back into the sea.
+
+No plant was harmed!)"""
+
+As always, the most interesting part remained outside the frame.
+    </p>
+
+    <!-- GALLERY -->
+    <img
+      src="../assets/css/images/home/projects/project17_1.JPG"
+      alt=""
+      style="display:block; width:100%; margin-bottom:16px;"
+    >
+
+    <img
+      src="../assets/css/images/home/projects/project17_2.JPG"
+      alt=""
+      style="display:block; width:100%; margin-bottom:16px;"
+    >
+
+    <img
+      src="../assets/css/images/home/projects/project17_3.JPG"
+      alt=""
+      style="display:block; width:100%; margin-bottom:72px;"
+    >
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  © 2025 Zhurunova & Lokatyr
+</footer>
+
+</body>
+</html>
