@@ -334,3 +334,14 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* ===== CV WIDTH TIGHTEN ===== */
+
+.cv-container {
+  max-width: 560px;   /* ⬅️ значно вужче */
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .cv-container {
+    padding: 0 8px;
+  }
+}
