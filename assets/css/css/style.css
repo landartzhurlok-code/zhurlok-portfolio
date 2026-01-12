@@ -582,6 +582,44 @@ h2 {
     width: 32px;
   }
 }
+/* ===== HEADER MOBILE FIX ===== */
+
+@media (max-width: 900px) {
+
+  .site-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .subtitle {
+    display: none; /* прибираємо на мобільному */
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 14px;
+    flex-wrap: nowrap;
+  }
+
+  .header-nav a {
+    margin: 0;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
 
 
 
