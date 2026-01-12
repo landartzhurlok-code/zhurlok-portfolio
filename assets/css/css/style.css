@@ -581,45 +581,34 @@ h2 {
   .brand-logo {
     width: 32px;
   }
-}
-/* ===== HEADER MOBILE FIX ===== */
 
+  /* ===== HEADER MOBILE FIX ===== */
 @media (max-width: 900px) {
 
   .site-header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .header-left {
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
-
-  .logo {
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
-  .subtitle {
-    display: none; /* прибираємо на мобільному */
+    gap: 12px;
   }
 
   .header-nav {
     display: flex;
-    gap: 14px;
+    gap: 20px;
     flex-wrap: nowrap;
   }
 
   .header-nav a {
     margin: 0;
-    font-size: 13px;
-    white-space: nowrap;
+    font-size: 14px;
   }
 }
+
 .contact a {
   color: inherit;
   text-decoration: none;
