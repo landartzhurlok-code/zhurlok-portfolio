@@ -345,3 +345,10 @@ body {
     padding: 0 8px;
   }
 }
+.cv h2 {
+  margin-top: 72px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
