@@ -367,4 +367,11 @@ body {
   height: 100%;
   border: 0;
 }
+.projects-note {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
 
